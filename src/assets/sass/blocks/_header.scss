@@ -1,0 +1,46 @@
+.menu_items { 
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar {
+    color: white;
+    &-brand {
+        width: 100%;
+        // text-align: center;
+    }
+    &_menu {
+        align-items: baseline;
+        width: 100%;
+        display: flex;
+        // display: flex;
+        // justify-content: center;
+        // flex-direction: column;
+        // flex-wrap: wrap;
+        // width: 100%;
+        & button {
+            background-color: $background;
+        }
+    }
+    &_social {
+        justify-content: flex-start;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        margin-bottom: 0px;
+        & li {
+            padding: 0px 10px;
+        }
+    }
+    &_links {
+        width: 0px;
+        & ul {
+            position: relative;
+            top: 40px;
+            left: -30px;
+            text-align: center;
+        }
+    } 
+    &_links li a {
+        color: white;
+    }
+}

@@ -1,0 +1,174 @@
+// X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 320px) {
+    .offers_filters {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .offers_form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main_block {
+        & h3 {
+            font-size: 32px;
+            padding: 0px 35px;
+            text-align: center;
+            line-height: 35px;
+        }
+    }
+    .main_container {
+        padding: 0px 15px;
+        
+    }
+    .h2-option {
+        margin: 40px 0 20px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+    .offers_sort {
+        justify-content: flex-start;
+        &-checkbox {
+            margin-bottom: 12px;
+        }
+    }
+    .main_block div.btn {
+        margin-bottom: 40px;
+    }
+    .offers_items {
+        justify-content: center;
+    }
+    .subscribe_block {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 576px) { 
+    .navbar_menu {
+        padding: 0px 15px;
+        align-items: baseline;
+        width: 100%;
+        display: flex;
+    }
+    .main_block-text {
+        margin-bottom: 50px;
+    }
+
+    .offers_sort {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .offers_item {
+        margin-right: 20px;
+    }
+    .offers_items :nth-child(2n+0) {
+        margin-right: 0px;
+    }
+    .main_block .main_block-text {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .main_block-text p {
+        width: 50%;
+    }
+    
+    .main_container .footer_navbar-menu-items {
+        justify-content: center;
+    }
+    .main_container .footer_navbar-menu-items li {
+        padding: 0px 10px;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    .main_container {
+        padding: 0 32px;
+    }
+    .offers_item {
+        margin-right: 20px;
+    }
+
+    .offers_items :nth-child(2n+0) {
+        margin-right: 20px;
+    }
+
+    .offers_items :nth-child(3n+0) {
+        margin-right: 0px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        position: inherit;
+    }
+    .container .main_block h3 {
+        font-size: 50px;
+        padding: 0px;
+    }
+    .main_container .questions_accordion {
+        width: 62.1%;
+    }
+    .offers_filters input {
+        margin-top: 15px;
+    }
+    .offers_sort {
+        justify-content: space-around;
+    }
+    .main_block-text :nth-child(1) {
+        padding-left: 0px;
+    }
+    .main_block-text {
+        margin-bottom: 72px;
+    }
+    .main_block div.btn {
+        margin-bottom: 150px;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1240px) { 
+    .main_block .main_block-text {
+        flex-direction: row;
+        width: 50%;
+    }
+
+    .main_block-text p {
+        padding: 0px 10px;
+    }
+    .container .main_block {
+        margin-top: 136px;
+        padding: 0px;
+        
+    }
+    .main_block h3 {
+        text-align: left;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1440px) { 
+    // .main_container {
+    //     max-width: 1240px;
+    // }
+    .main_container {
+        padding: 0 99px;
+    }
+    .offers_sort {
+        justify-content: space-between;
+    }
+    .main {
+        height: 688px;
+    }
+}
+
+
+
+
