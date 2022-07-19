@@ -282,10 +282,7 @@ const customSelect2 = selector => {
 
 
   document.addEventListener("click", closeAllSelect);
-}; // const submit = document.querySelector('.car-filter');
-// submit.addEventListener('click', function(e) {
-//     e.preventDefault();
-// });
+};
 
 /***/ }),
 
@@ -299,33 +296,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-const validateEmail = e => {
-  console.log(e.target);
-  const email = document.querySelector('#email');
-  const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-  console.log(email.value);
+const validateEmail = selector => {
+  const email = document.querySelector(selector),
+        icon1 = document.querySelector('.input-error'),
+        icon2 = document.querySelector('.input-success'),
+        errorText = document.querySelector('.error-text'),
+        btn = document.querySelector('#subscribe-btn');
 
-  if (!filter.test(email.value)) {
-    alert('Please provide a valid email address');
-    email.focus();
-    return false;
-  } else {
-    alert("Thanks for your interest in us, Now you will be able to receive monthly updates from us.");
-    document.getElementById('txtEmailId').value = "";
-  }
+  email.onkeydown = function () {
+    const regEx = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
+
+    if (regEx.test(email.value)) {
+      email.style.borderColor = '#507a36';
+      icon1.style.display = 'none';
+      icon2.style.display = 'block';
+      btn.removeAttribute('disabled');
+      errorText.style.display = 'none';
+    } else {
+      email.style.borderColor = '#df4e3c';
+      btn.setAttribute('disabled', true);
+      icon1.style.display = 'block';
+      icon2.style.display = 'none';
+      errorText.style.display = 'block';
+    }
+  };
 };
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validateEmail); //    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//    const input = document.querySelector(inputText);
-//    if(inputText.value.match(mailformat)) {
-//        console.log("Valid email address!");
-//        document.form1.text1.focus();
-//        return true;
-//    } else {
-//        console.log("You have entered an invalid email address!");
-//        document.form1.text1.focus();
-//        return false;
-//    }
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validateEmail);
 
 /***/ })
 
@@ -403,8 +400,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   (0,_modules_accordion__WEBPACK_IMPORTED_MODULE_0__["default"])();
   (0,_modules_select__WEBPACK_IMPORTED_MODULE_1__.customSelect)('custom-select');
-  (0,_modules_select__WEBPACK_IMPORTED_MODULE_1__.customSelect2)('custom-select2'); // validateEmail('#email');
-
+  (0,_modules_select__WEBPACK_IMPORTED_MODULE_1__.customSelect2)('custom-select2');
+  (0,_modules_validateEmail__WEBPACK_IMPORTED_MODULE_2__["default"])('#email');
   const sortBadge = document.querySelector('.offers_sort-select-badge'),
         arrowUp = sortBadge.querySelector('#arrow-up'),
         arrowDown = sortBadge.querySelector('#arrow-down');

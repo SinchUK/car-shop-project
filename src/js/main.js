@@ -3,13 +3,12 @@ import  { customSelect, customSelect2 } from './modules/select';
 import validateEmail from './modules/validateEmail';
 
 
-
 window.addEventListener('DOMContentLoaded', () => {
     'use strict';
     accordion();
     customSelect('custom-select');
     customSelect2('custom-select2');
-    // validateEmail('#email');
+    validateEmail('#email');
 
     const sortBadge = document.querySelector('.offers_sort-select-badge'),
           arrowUp = sortBadge.querySelector('#arrow-up'),

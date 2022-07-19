@@ -1,33 +1,28 @@
-const validateEmail = (e) => {
-    console.log(e.target);
-    const email = document.querySelector('#email');
-    const filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-    console.log(email.value);
-        if (!filter.test(email.value)) {
-            alert('Please provide a valid email address');
-            email.focus();
-            return false;
+const validateEmail = (selector) => {
+
+    const email = document.querySelector(selector),
+          icon1 = document.querySelector('.input-error'),
+          icon2 = document.querySelector('.input-success'),
+          errorText = document.querySelector('.error-text'),
+          btn = document.querySelector('#subscribe-btn');
+
+    email.onkeydown = function() {
+        const regEx = /^([\.\_a-zA-Z0-9]+)@([a-zA-Z]+)\.([a-zA-Z]){2,8}$/;
+        if (regEx.test(email.value)) {
+            email.style.borderColor = '#507a36';
+            icon1.style.display = 'none';
+            icon2.style.display = 'block';
+            btn.removeAttribute('disabled');
+            errorText.style.display = 'none';
+        } else {
+            email.style.borderColor = '#df4e3c';
+            btn.setAttribute('disabled', true);
+            icon1.style.display = 'block';
+            icon2.style.display = 'none';
+            errorText.style.display = 'block';
         }
-        else {
-            alert("Thanks for your interest in us, Now you will be able to receive monthly updates from us.");
-            document.getElementById('txtEmailId').value = "";
-        }
+    };
 };
 
 
 export default validateEmail;
-
-
-
-//    const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-
-//    const input = document.querySelector(inputText);
-//    if(inputText.value.match(mailformat)) {
-//        console.log("Valid email address!");
-//        document.form1.text1.focus();
-//        return true;
-//    } else {
-//        console.log("You have entered an invalid email address!");
-//        document.form1.text1.focus();
-//        return false;
-//    }

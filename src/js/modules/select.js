@@ -95,7 +95,6 @@ export const customSelect = (selector) => {
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
 
-
 };
 
 //Filter select
@@ -214,11 +213,3 @@ export const customSelect2 = (selector) => {
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
 };
-
-
-
-// const submit = document.querySelector('.car-filter');
-
-// submit.addEventListener('click', function(e) {
-//     e.preventDefault();
-// });

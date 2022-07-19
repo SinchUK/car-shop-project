@@ -5,23 +5,17 @@
 .navbar {
     color: white;
     &-brand {
-        width: 100%;
-        // text-align: center;
     }
     &_menu {
         align-items: baseline;
         width: 100%;
         display: flex;
-        // display: flex;
-        // justify-content: center;
-        // flex-direction: column;
-        // flex-wrap: wrap;
-        // width: 100%;
         & button {
             background-color: $background;
         }
     }
     &_social {
+        padding-left: 0px;
         justify-content: flex-start;
         text-decoration: none;
         list-style: none;
@@ -32,15 +26,15 @@
         }
     }
     &_links {
-        width: 0px;
         & ul {
-            position: relative;
-            top: 40px;
-            left: -30px;
             text-align: center;
         }
     } 
     &_links li a {
         color: white;
     }
+}
+
+.menu_items .nav-item .nav-link:hover{
+    color: $h2-option;
 }

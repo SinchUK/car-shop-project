@@ -4,44 +4,59 @@
 // Small devices (landscape phones, 576px and up)
 
 @media (min-width: 320px) {
-    .offers_filters {
-        flex-wrap: wrap;
-        justify-content: center;
+    .navbar_menu-social-block {
+        display: none;
     }
-    .offers_form {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+    .navbar_menu {
+        justify-content: space-between;
     }
-    .main_block {
-        & h3 {
-            font-size: 32px;
-            padding: 0px 35px;
-            text-align: center;
-            line-height: 35px;
+
+    .offers {
+        &_filters {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &_form {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &_sort {
+            justify-content: flex-start;
+            &-checkbox {
+                margin-bottom: 12px;
+            }
+        }
+        &_items {
+            margin-bottom: 40px;
+            justify-content: center;
         }
     }
-    .main_container {
-        padding: 0px 15px;
-        
+
+    .main {
+        &_block {
+            & h3 {
+                font-size: 32px;
+                padding: 0px 35px;
+                text-align: center;
+                line-height: 35px;
+            }
+            & div.btn {
+                margin-bottom: 40px;
+            }
+        }
+        &_container {
+            padding: 0px 15px;
+            
+        }
     }
+
     .h2-option {
         margin: 40px 0 20px;
         line-height: 50px;
         font-size: 30px;
     }
-    .offers_sort {
-        justify-content: flex-start;
-        &-checkbox {
-            margin-bottom: 12px;
-        }
-    }
-    .main_block div.btn {
-        margin-bottom: 40px;
-    }
-    .offers_items {
-        justify-content: center;
-    }
+
     .subscribe_block {
         justify-content: center;
     }
@@ -49,7 +64,6 @@
 
 @media (min-width: 576px) { 
     .navbar_menu {
-        padding: 0px 15px;
         align-items: baseline;
         width: 100%;
         display: flex;
@@ -66,30 +80,69 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-    .offers_item {
-        margin-right: 20px;
+    .offers {
+        &_item {
+            margin-right: 20px;
+        }
+        &_items :nth-child(2n+0) {
+            margin-right: 0px;
+        }
     }
-    .offers_items :nth-child(2n+0) {
-        margin-right: 0px;
-    }
+
     .main_block .main_block-text {
         flex-wrap: nowrap;
         flex-direction: column;
     }
+
     .main_block-text p {
         width: 50%;
     }
     
-    .main_container .footer_navbar-menu-items {
+    .footer_navbar .footer_navbar-menu-items {
         justify-content: center;
     }
-    .main_container .footer_navbar-menu-items li {
+
+    .footer_navbar .footer_navbar-menu-items li {
         padding: 0px 10px;
+    }
+
+    .questions .questions_accordion {
+        width: 62.1%;
+    }
+
+    .footer .footer_navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
     }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) { 
+    .footer_navbar .footer_navbar_social-block ul {
+        width: 55px;
+    }
+
+    .navbar_social {
+        margin-left: 25px;
+        &  li {
+            padding: 0 15px;
+        }
+    }
+
+    .menu_items li a {
+        margin-left: 30px;
+    }
+    .navbar_menu .navbar_menu-social-block {
+        display: block;
+    }
+   
+    .offers_item-text .offers_item-info span {
+        margin-right: 0px;
+    }
+    .offers_items {
+        margin-bottom: 80px;
+    }
     .main_container {
         padding: 0 32px;
     }
@@ -109,13 +162,12 @@
         flex-direction: row;
         position: inherit;
     }
-    .container .main_block h3 {
+    .main_container .main_block h3 {
         font-size: 50px;
         padding: 0px;
+        text-align: left;
     }
-    .main_container .questions_accordion {
-        width: 62.1%;
-    }
+    
     .offers_filters input {
         margin-top: 15px;
     }
@@ -166,6 +218,26 @@
     }
     .main {
         height: 688px;
+    }
+    .subscribe_block {
+        justify-content: space-between;
+    }
+
+    .offers_items :nth-child(3n+0) {
+        margin-right: 20px;
+    }
+
+    .offers_items :nth-child(4n+0) {
+        margin-right: 0px;
+    }
+    .subscribe_block-input {
+        width: 715px;
+    }
+    .subscribe_block-text {
+        width: 505px;
+    }
+    .field {
+        width: 505px;
     }
 }
 
