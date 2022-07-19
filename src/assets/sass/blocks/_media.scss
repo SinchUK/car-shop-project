@@ -207,11 +207,9 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1440px) { 
-    // .main_container {
-    //     max-width: 1240px;
-    // }
     .main_container {
-        padding: 0 99px;
+        width: 1240px;
+        padding: 0px;
     }
     .offers_sort {
         justify-content: space-between;
