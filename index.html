@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title></title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="assets/css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Main -->
+    <main class="main">
+        <header class="header">
+            <div class="main_container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="container-fluid navbar_menu">
+                            <a class="navbar-brand" href="#">
+                                <img src="assets/img/logo.png" alt="" />
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse navbar_links" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0 menu_items">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Inventory</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Financing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contacts</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="navbar_menu-social-block">
+                                <ul class="navbar_social d-flex">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="fa-brands fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
+        </header>
+        <div class="main_container">
+            <div class="row">
+                <div class="main_block">
+                    <h3>The right way to get a car</h3>
+                    <div class="main_block-text">
+                        <p>
+                           Monza Motorsports is a boutique-style
+                           dealership specializing in premium imports.
+                           We offer an advanced online vehicle purchasing 
+                           experience with integrated financing and 
+                           contactless home delivery.
+                        </p>
+                        <p>
+                           All of our cars come with a 5 day/500 
+                           kilometres no-hassle exchange option. 
+                           Since 2012 Monza Motorsports has been the 
+                           benchmark for innovation in the automotive 
+                           industry.
+                        </p>
+                    </div>
+                    <div class="btn button button_medium transparent-mode">Browse cars</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Offers -->
+    <section class="offers">
+        <div class="main_container">
+            <h2 class="h2-option">Current offers</h2>
+            <form>
+                <div class="offers_filters">
+                    <div class="offers_filters-item custom-select2">
+                        <select name="year">
+                            <option selected>Year</option>
+                            <option value="1">2021</option>
+                            <option value="2">2020</option>
+                            <option value="3">2019</option>
+                            <option value="4">2018</option>
+                            <option value="5">2017</option>
+                            <option value="6">2016</option>
+                            <option value="7">2015</option>
+                            <option value="8">2014</option>
+                            <option value="9">2013</option>
+                        </select>
+                    </div>
+                    <div class="offers_filters-item custom-select2">
+                        <select name="make">
+                            <option selected>Make</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="offers_filters-item custom-select2">
+                        <select name="model">
+                            <option selected>Model</option>
+                            <option value="1">Toyota</option>
+                            <option value="2">Lexus</option>
+                            <option value="3">Mercedes-Benz</option>
+                            <option value="4">Honda</option>
+                            <option value="5">Opel</option>
+                            <option value="6">Wolksvagen</option>
+                            <option value="7">Renault</option>
+                            <option value="8">Citroen</option>
+                            <option value="9">BMW</option>
+                            <option value="10">Ford</option>
+                            <option value="11">Skoda</option>
+                            <option value="12">Seat</option>
+                        </select>
+                    </div>
+                    <div class="offers_filters-item custom-select2">
+                        <select name="trim">
+                            <option selected>Trim</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                            <option value="4">Four</option>
+                            <option value="5">Five</option>
+                        </select>
+                    </div>
+                    <div class="offers_filters-item custom-select2">
+                        <select name="mileage">
+                            <option selected>Mileage</option>
+                            <option value="1">10 000</option>
+                            <option value="2">20 000</option>
+                            <option value="3">30 000</option>
+                            <option value="4">40 000</option>
+                            <option value="5">50 000</option>
+                            <option value="6">> 60 000</option>
+                        </select>
+                    </div>
+                    <input id="car-filter" type="submit" class="btn button button_large brand-mode" value="40 cars"/>
+                </div>
+                <div class="offers_sort">
+                    <div class="offers_sort-checkbox-wrapper">
+                        <label class="offers_sort-checkbox">
+                            <input id="check-available" type="checkbox">
+                            <span class="checkmark"></span>
+                            Instantly available vehicles
+                        </label>
+                    </div>
+                    <div class="offers_sort-select">
+                        <span>Sort by</span>
+                        <div class="offers_sort-select-badge">
+                            <svg id = "arrow-up" aria-sort="down" width="7" height="8" viewBox="0 0 7 8" fill="#df4e3c" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.33334 0L0.444458 2.88167H2.61112V7.94446H4.05555V2.88167H6.22221L3.33334 0Z"/>
+                            </svg>
+                            <svg id="arrow-down" width="7" height="8" viewBox="0 0 7 8" fill="#8d8d8d" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.38892 5.11833V0.055542H2.9445V5.11833H0.777832L3.66671 8L6.55558 5.11833H4.38892Z"/>
+                            </svg>
+                        </div>
+                        <div class="custom-select">
+                            <select>
+                                <option value="0">Publication date (ascending)</option>
+                                <option value="1">Price (ascending)</option>
+                                <option value="2">Mileage (ascending)</option>
+                                <option value="3">Mileage (descending)</option>
+                                <option value="4">Performance (ascending)</option>
+                                <option value="5">Performance (descending)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>    
+            <div class="offers_items">
+                <div class="offers_item">
+                    <img src="assets/img/car.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-1.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-2.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-3.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-4.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-5.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-6.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-7.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-8.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-9.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-10.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-11.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-12.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-13.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-14.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-15.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-16.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-17.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-18.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-19.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-20.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-21.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="offers_item">
+                    <img src="assets/img/car-21.png" alt="item"/>
+                    <div class="offers_item-text">
+                        <div class="offers_item-title">
+                            <span>2019</span>
+                            <a href="#">
+                                <span class="offers_item-title-name">
+                                    Volkswagen Tiguan
+                                </span>
+                            </a>
+                        </div>
+                        <div class="offers_item-info">
+                            <span>19 856 km |</span>
+                            <span>Automatic |</span>
+                            <span>Diesel</span>
+                        </div>
+                        <div class="offers_item-price">
+                            <span>$34,888</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="subscribe">
+        <div class="main_container">
+            <div class="row">
+                <div class="subscribe_block">
+                    <div class="subscribe_block-text">
+                        <h3>Haven't found a suitable vehicle?</h3>
+                        <p>
+                            Sign up for our newsletter and be the first 
+                            to know when we publish new vehicle offers.
+                        </p>
+                    </div>
+                    <div class="subscribe_block-input">
+                        <form action="#">
+                        <div class="field">
+                            <div class="field-input">
+                                <input id="email" name="mail" type="text" placeholder="Enter your email"/>
+                                <div class="icons">
+                                    <span class="input-error fa fa-xmark"></span>
+                                    <span class="input-success fa fa-check"></span>
+                                </div>
+                            </div>
+                            <div class="error-text">Incorrect email</div>
+                        </div>
+                        <button id="subscribe-btn" class="btn button button_small white-mode">Subscribe now</button>
+                        </form>
+                    </div>
+                </div>>
+            </div>
+        </div>
+    </section>
+
+    <!--Questions -->
+    <section class="questions">
+        <div class="container">
+            <div class="row">
+                <h2 class="h2-option">popular questions</h2>
+                <div class="questions_accordion">
+                    <button class="accordion">1. Scope <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">2. Vehicle characteristics <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">3. Warranty / guarantee <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">4. Trade-in vehicle <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">5. Home Delivery <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">6. Right of return <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">7. Written form <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                    <button class="accordion">8. Applicable law and place of jurisdiction <i class="fa fa-plus" aria-hidden="true"></i></button>
+                    <div class="panel">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna 
+                            aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main_container">
+            <div class="row">
+                <div class="footer_navbar">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/img/logo-footer.png" />
+                    </a>
+                    <div>
+                        <ul class="navbar-nav mb-2 mb-lg-0 menu_items footer_navbar-menu-items">
+                            <li class="footer_nav-item">
+                                <a class="footer_nav-link" href="#">Inventory</a>
+                            </li>
+                            <li class="footer_nav-item">
+                                <a class="footer_nav-link" href="#">Financing</a>
+                            </li>
+                            <li class="footer_nav-item">
+                                <a class="footer_nav-link" href="#">Contacts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_navbar_social-block">
+                        <ul>
+                            <li class="footer_nav-item">
+                                <a class="footer_nav-link" href="#">
+                                    <i class="fa-brands fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="footer_nav-item">
+                                <a class="footer_nav-link" href="#">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+
+</html>
